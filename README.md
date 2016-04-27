@@ -24,4 +24,4 @@ TARGET PROPAGATION
 ```
 
 # Troubleshooting
-First of all see: (https://github.com/docker/docker/issues/20345)[https://github.com/docker/docker/issues/20345]
+First of all see: [https://github.com/docker/docker/issues/20345](https://github.com/docker/docker/issues/20345)
