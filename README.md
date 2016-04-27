@@ -4,7 +4,7 @@ This image runs cvmfs in a container.
 
 ```
 mkdir -p /mnt/cvmfs
-docker run -d -v /mnt/cvmfs:/cvmfs:rshared cbatchx/cvmfs-base
+docker run -it --privileged -v /mnt/cvmfs:/cvmfs:rshared cbatchx/cvmfs-base
 ```
 
 ## Requirements
@@ -25,3 +25,12 @@ TARGET PROPAGATION
 
 # Troubleshooting
 First of all see: [https://github.com/docker/docker/issues/20345](https://github.com/docker/docker/issues/20345)
+
+On ubuntu 15.04:
+
+Remove `MountFlags=slave` from `/lib/systemd/system/docker.service`
+Then run
+```sh
+sudo systemctl daemon-reload
+sudo systemctl restart docker
+```
