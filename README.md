@@ -7,10 +7,10 @@ This is very much WIP, use with caution.
 ```
 mkdir -p $HOME/test
 docker run -it \
-    --privileged \                              # Must run as privileged
-    -v $HOME/test:/cvmfs:rshared \              # Mount point
-    -e CVMFS_REPOSITORIES=cernvm-prod.cern.ch \ # Repos to mount
-    -e CVMFS_HTTP_PROXY="DIRECT" \              # Proxy settings
+    --privileged \
+    -v $HOME/test:/cvmfs:rshared \
+    -e CVMFS_REPOSITORIES=cernvm-prod.cern.ch \
+    -e CVMFS_HTTP_PROXY="DIRECT" \
      cbatchx/cvmfs-base
 ```
 
