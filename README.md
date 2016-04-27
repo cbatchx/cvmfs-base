@@ -22,3 +22,6 @@ $ findmnt -o TARGET,PROPAGATION /
 TARGET PROPAGATION
 /      shared                                                   # Mountpoint is shared
 ```
+
+# Troubleshooting
+First of all see: (https://github.com/docker/docker/issues/20345)[https://github.com/docker/docker/issues/20345]
