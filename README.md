@@ -4,7 +4,7 @@ This image runs cvmfs in a container.
 
 ```
 mkdir -p /mnt/cvmfs
-docker run -d -v /mnt/cvmfs:/cvmfs:rshared cbatch/cvmfs-base
+docker run -d -v /home/diz/test:/cvmfs:rshared cbatchx/cvmfs-base
 ```
 
 ## Requirements
