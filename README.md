@@ -4,7 +4,7 @@ This image runs cvmfs in a container.
 
 ```
 mkdir -p /mnt/cvmfs
-docker run -d -v /mnt/cvmfs:/cvmfs:rshared cbatch/cvmfs-base
+docker run -d -v /mnt/cvmfs:/cvmfs:rshared cbatchx/cvmfs-base
 ```
 
 ## Requirements
@@ -24,4 +24,4 @@ TARGET PROPAGATION
 ```
 
 # Troubleshooting
-First of all see: (https://github.com/docker/docker/issues/20345)[https://github.com/docker/docker/issues/20345]
+First of all see: [https://github.com/docker/docker/issues/20345](https://github.com/docker/docker/issues/20345)
