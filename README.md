@@ -14,6 +14,16 @@ docker run -it \
      cbatchx/cvmfs-base
 ```
 
+Run as daemon mounted at /cvmfs
+```
+docker run -d --restart=always \
+    --privileged \
+    -v /cvmfs:/cvmfs:rshared \
+    -e CVMFS_REPOSITORIES=cernvm-prod.cern.ch,alice.cern.ch \
+    -e CVMFS_HTTP_PROXY="DIRECT" \
+     cbatchx/cvmfs-base
+```
+
 ## Requirements
 * Docker 1.10+
 * You have at least one mountpoint on the host that is shared.
